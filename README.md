@@ -31,15 +31,16 @@ The dataset includes the following key variables (not exhaustive):
 
 Several models were evaluated for predicting house prices, with the following results:
 
-| Model                     | R² Score | Mean Squared Error (MSE) |
-|---------------------------|----------|----------------------------|
-| Linear Regression         | 0.69     | 148,622                    |
-| Ridge                     | 0.69     | 148,630                    |
-| Lasso                     | 0.69     | 148,622                    |
-| ElasticNet                | 0.57     | 174,008                    |
-| Decision Tree Regressor   | 0.68     | 150,958                    |
-| Extra Tree Regressor      | 0.68     | 107,249                    |
-| XGBoost                   | 0.86     | 99,350                     |
-| Random Forest Regressor   | 0.98     | 39,980                     |
+| Model                    | R² Score | Root Mean Squared Error (RMSE) | Mean Absolute Error (MAE) |
+|--------------------------|----------|---------------------------------|----------------------------|
+| XGBoost Regressor        | 0.836    | 86,178.84                       | 60,414.41                  |
+| Linear Regression        | 0.834    | 86,651.35                       | 62,420.97                  |
+| Lasso                    | 0.834    | 86,820.25                       | 62,550.66                  |
+| Ridge                    | 0.833    | 87,068.63                       | 62,768.25                  |
+| Gradient Boosting        | 0.750    | 106,431.56                      | 80,450.01                  |
+| Extra Tree Regressor     | 0.618    | 131,562.28                      | 88,463.50                  |
+| Decision Tree Regressor  | 0.578    | 138,434.86                      | 94,959.53                  |
+| ElasticNet               | 0.558    | 141,686.96                      | 109,102.14                 |
+| K-Neighbors Regressor    | 0.421    | 162,069.00                      | 121,644.83                 |
 
-The **Random Forest Regressor** showed the best performance with an R² Score of **0.98** and a Mean Squared Error (MSE) of **39,980**.
+The **XGBoost Regressor** showed the best performance with an R² Score of **0.836** and a Root Mean Squared Error (RMSE) of **86,178.84**, indicating the highest predictive accuracy among the models tested.
